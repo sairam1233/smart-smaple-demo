@@ -11,12 +11,6 @@ import {
 import { useState } from 'react';
 
 export default function Gifts() {
-    const [copiedAccount, setCopiedAccount] = useState(null);
-    const copyToClipboard = (text, bank) => {
-        navigator.clipboard.writeText(text);
-        setCopiedAccount(bank);
-        setTimeout(() => setCopiedAccount(null), 2000);
-    };
     return (<>
         <section id="gifts" >
            
